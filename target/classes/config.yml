@@ -1,0 +1,14 @@
+messages:
+  onJoin:
+    joinmsg: "Welcome to Parkour! {player}!"
+    jointitle:
+      maintitle: "&6&lWelcome to Parkour!"
+      subtitle: "&bEnjoy your stay!"
+      fadeintime: 1
+      showouttime: 3
+      fadeouttime: 1
+  hubscoreboard:
+    server-ip: "&cServerIP.net"
+parkourarenas:
+  worlds:
+

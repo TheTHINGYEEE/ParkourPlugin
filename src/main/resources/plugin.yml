@@ -1,0 +1,15 @@
+name: ParkourPlugin
+version: ${project.version}
+main: com.github.thethingyee.parkourplugin.ParkourPlugin
+api-version: 1.12
+
+commands:
+  parkour:
+    usage: /<command> <arguments>
+    description: Used for the Parkour Plugin.
+  findworldbyuuid:
+    usage: /<command> <worlduuid>
+    description: Built-in plugin on Parkour Plugin. Allows you to find ANY world by using the world's uuid.
+  unloadworld:
+    usage: /<command> <world>
+    description: Built-in plugin on Parkour Plugin. Used to unload ANY worlds by the world name.
