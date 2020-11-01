@@ -45,7 +45,7 @@ public class ParkourJoinListeners implements Listener {
                     hubScoreboard.access(target);
                 }
                 try {
-                    for(String arenaWorlds : parkourPlugin.getConfig().getConfigurationSection("parkourarenas.worlds").getKeys(false)) {
+                    for(String arenaWorlds : parkourPlugin.getArenaConfig().getConfigurationSection("parkourarenas.worlds").getKeys(false)) {
                         if(target.getLocation().getWorld().equals(Bukkit.getWorld(arenaWorlds))) {
                             arenaScoreboard.access(target);
                         }
@@ -66,6 +66,5 @@ public class ParkourJoinListeners implements Listener {
             Bukkit.getConsoleSender().sendMessage(parkourPlugin.PREFIX + ChatColor.RED + "Error catched. Spawn not set, set it by /parkour setspawn");
             e.printStackTrace();
         }
-
     }
 }

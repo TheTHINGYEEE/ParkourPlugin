@@ -4,6 +4,7 @@ import com.github.thethingyee.parkourplugin.ParkourPlugin;
 import com.github.thethingyee.parkourplugin.SubCore.managers.Arena;
 import com.github.thethingyee.parkourplugin.SubCore.managers.ArenaManager;
 import com.github.thethingyee.parkourplugin.SubCore.managers.PlayerManager;
+import com.github.thethingyee.parkourplugin.SubCore.managers.WarpManager;
 
 public class SubCore {
 

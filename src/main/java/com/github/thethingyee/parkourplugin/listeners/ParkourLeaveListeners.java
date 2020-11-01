@@ -41,7 +41,7 @@ public class ParkourLeaveListeners extends ParkourScoreboards implements Listene
                 }.runTaskTimer(getParkourPlugin(), 0, 20);
             }
             try {
-                for(String arenaWorlds : this.getParkourPlugin().getConfig().getConfigurationSection("parkourarenas.worlds").getKeys(false)) {
+                for(String arenaWorlds : this.getParkourPlugin().getArenaConfig().getConfigurationSection("parkourarenas.worlds").getKeys(false)) {
                     if(target.getLocation().getWorld().equals(Bukkit.getWorld(arenaWorlds))) {
                         new BukkitRunnable() {
 

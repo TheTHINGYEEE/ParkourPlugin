@@ -17,7 +17,7 @@ public class Arena {
     }
 
     public Set<String> getArenas() {
-        return plugin.getConfig().getConfigurationSection("parkourarenas.worlds").getKeys(false);
+        return plugin.getArenaConfig().getConfigurationSection("parkourarenas.worlds").getKeys(false);
     }
     public boolean onArena(Player player) {
         try {
@@ -41,5 +41,8 @@ public class Arena {
     }
     public ParkourPlugin getMainClass() {
         return plugin;
+    }
+    public String getWorldUUID(World name) {
+        return name.getUID().toString();
     }
 }

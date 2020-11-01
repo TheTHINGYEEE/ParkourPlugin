@@ -30,4 +30,10 @@ public class ArenaManager extends Arena {
             player.sendMessage(this.getMainClass().PREFIX + ChatColor.RED + "That world doesn't exist.");
         }
     }
+    public boolean arenaInDatabase(String name) {
+        if(this.getArenas().contains(name) && Bukkit.getWorld(name) != null) {
+            return true;
+        }
+        return false;
+    }
 }
