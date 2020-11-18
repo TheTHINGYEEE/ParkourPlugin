@@ -49,7 +49,7 @@ public class ParkourGUI {
     }
     public void loadWarpGraphicalUserInterface(Player player, String armorStandUUID) {
 
-        Inventory gui = Bukkit.createInventory(null, 9, ChatColor.GREEN + "Connect");
+        Inventory gui = Bukkit.createInventory(null, 9, ChatColor.DARK_GREEN + "Connect Warper?");
 
         ItemStack yes = new ItemStack(Material.WOOL, 1, DyeColor.LIME.getWoolData());
         ItemStack no = new ItemStack(Material.WOOL, 1, DyeColor.RED.getWoolData());

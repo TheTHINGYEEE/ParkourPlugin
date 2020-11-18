@@ -3,6 +3,7 @@ package com.github.thethingyee.parkourplugin.listeners;
 import com.github.thethingyee.parkourplugin.ParkourPlugin;
 import org.bukkit.Bukkit;
 import org.bukkit.World;
+import org.bukkit.entity.ArmorStand;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.CreatureSpawnEvent;
@@ -16,6 +17,7 @@ public class ParkourMobSpawn implements Listener {
     }
     @EventHandler
     public void onMobSpawn(CreatureSpawnEvent event) {
+        if(event.getEntity() instanceof ArmorStand) return;
         int count = 0;
         try {
             for (String things : parkourPlugin.getStringWorlds()) {
