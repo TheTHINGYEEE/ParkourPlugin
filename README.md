@@ -1,2 +1,3 @@
 # ParkourPlugin
-Plugin still on maintenance. And still not finished. Uploaded to GitHub for backup purposes.
+Plugin still on maintenance.
+Please contact TheTHINGYEEEEE#1859 on Discord for more info.
